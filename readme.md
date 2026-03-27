@@ -1,12 +1,12 @@
 VIT Bhopal Academic Resource Navigator
 A robust Java-based desktop application designed to help students at VIT Bhopal manage their academic records, track course progress, and calculate their Grade Point Average (GPA) using the university's specific grading system.
 
-📌 Problem Statement
+ Problem Statement
 As students at VIT Bhopal, we manage a diverse range of courses (University Core, Programme Core, Electives) each with different credit weights. Manually tracking these across semesters and calculating an accurate CGPA according to the S-F grading scale can be error-prone and tedious.
 
 The VIT Bhopal Academic Resource Navigator solves this by providing a centralized, persistent Graphical User Interface (GUI) where students can log their grades and instantly view their academic standing.
 
-✨ Key Features
+ Key Features
 Intuitive GUI: Built with Java Swing for a clean, user-friendly experience.
 
 Data Persistence: Uses Java Serialization to save your course list to a local file (student_data.dat). Your data remains safe even after closing the application.
@@ -29,17 +29,20 @@ Data Structures: * ArrayList: For dynamic storage of course objects.
 HashMap: For constant-time lookup of grade-to-point mappings.
 
 I/O Operations: ObjectOutputStream and ObjectInputStream for binary data persistence.
-📂 Project Structure
 
-   VITNavigator/
-   │
-   ├── Course.java          # Model class representing a subject (Name, Credits, Grade)
-   ├── GPACalculator.java   # Logic class for grade point mapping and math formulas
-   ├── FileManager.java     # Utility class for saving/loading data to student_data.dat
-   ├── VITNavigatorGUI.java # Main class containing the GUI and Event Handlers
-   └── README.md            # Project documentation
+<pre>
+ Project Structure
+  VIT-Bhopal-Navigator/
+  ├── src/
+  │   ├── Course.java          # Model class
+  │   ├── FileManager.java     # Data logic
+  │   ├── GPACalculator.java   # Calculation logic
+  │   └── VITNavigatorGUI.java # User Interface
+  ├── .gitignore               # Excludes junk files
+  └── README.md                # Project Info
+</pre>
 
-🚀 Setup and Installation
+ Setup and Installation
 Prerequisites
 Ensure you have Java Development Kit (JDK) installed (Version 8 or higher).
 
@@ -60,7 +63,7 @@ Run the application:
 
 Bash
 java VITNavigatorGUI
-📖 How to Use
+ How to Use
 Add Course: Enter the name of your subject, the number of credits (e.g., 2, 3, or 4), and select your grade from the dropdown.
 
 View List: The table in the center will automatically update with your new entry.
@@ -68,7 +71,7 @@ View List: The table in the center will automatically update with your new entry
 Calculate GPA: Click the "Calculate GPA" button at the bottom to see your semester performance.
 
 Save: Click "Save & Exit" to ensure your data is written to the disk for your next session.
-## 📸 Screenshots
+##  Screenshots
 
 | Main Dashboard | GPA Calculation |
 | :--- | :--- |
